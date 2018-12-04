@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+    
+    <ImageView
+        android:id="@+id/beerimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+    //맥주 이미지.id = beerimage
+
+    <TextView
+        android:textColor="#000000"
+        android:id="@+id/beername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/beerimage"
+        android:layout_toRightOf="@+id/beerimage"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+    //맥주 이름. id= beername
+
+    <TextView
+        android:id="@+id/brand"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/beername"
+        android:layout_toRightOf="@id/beerimage"
+        android:layout_marginTop="1dip"
+        android:textSize="15dp" />
+    //맥주 브랜드. id = brand
+
+    <TextView
+        android:id="@+id/arcohol"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/brand"
+        android:layout_toRightOf="@id/beerimage"
+        android:layout_marginTop="1dip"
+        android:textSize="15dp" />
+    //맥주 도수. id=arcohol
+
+    <TextView
+        android:id="@+id/rating"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/arcohol"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/beerimage"
+        android:textSize="15dp"
+        />
+    // 맥주 평점.id = rating
+
+
+</RelativeLayout>

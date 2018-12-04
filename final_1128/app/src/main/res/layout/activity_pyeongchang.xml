@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/beer12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="평창"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="280dp"
+                    android:layout_height="150dp"
+                    android:text=
+                        "IBU : 22 \n 알코올 : 4.9%\n 고소한 옥수수향과 신선한 몰트 향의 아로마가 조화롭게
+어우러지는 새로운 스타일의 맥주로, 벨지안 효모에서 오는 과일향과
+더불어 국산 옥수수와 옥수수수염을 사용한 구수한 마무 리가 특징.\n\n"
+                android:textSize="15dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/favoriteButton"
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="즐겨찾기로!"
+                        android:textSize="10dp" />
+                    <Button
+                        android:id="@+id/locationButton"
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="주변 입점위치"
+                        android:textSize="10dp" />
+                    <Button
+                        android:id="@+id/couponButton"
+                        android:layout_width="68dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:text="쿠폰받기"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="맥주 별점"
+                android:textSize="20dp" />
+
+            <RatingBar
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="코멘트 남기기"
+                android:textSize="20dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edittext"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:hint="이 맥주는요..."
+                    android:textSize="20dp" />
+
+                <Button
+                    android:id="@+id/button_cmtinput"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="코멘트입력" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/opinionResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="20dp" />
+
+            <Button
+                android:id="@+id/button_cmtdelete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="코멘트삭제" />
+
+            <Button
+                android:id="@+id/webviewButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="코리아크래프트브루어리 홈피 바로가기" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</LinearLayout>
